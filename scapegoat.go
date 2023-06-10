@@ -19,7 +19,7 @@ type node[T constraints.Ordered] struct {
 	key    T
 }
 
-type stats struct {
+type Stats struct {
 	TotalRebalances            uint64
 	TotalRebalancesAfterInsert uint64
 	TotalRebalancesAfterRemove uint64
@@ -33,7 +33,7 @@ type Scapegoat[T constraints.Ordered] struct {
 	alpha float64
 	n     int
 	q     int
-	Stats stats
+	Stats Stats
 }
 
 const DefaultAlpha float64 = 1.5

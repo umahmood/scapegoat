@@ -181,8 +181,6 @@ func TestAttemptToRemoveKeysThatDoesNotExist(t *testing.T) {
 	assert.Equal(uint64(0), sg.Stats.TotalSearches)
 }
 
-// TODO: need to ADD tests for remove cases.
-
 func TestSearchKeyExists(t *testing.T) {
 	assert := assert.New(t)
 

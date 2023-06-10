@@ -1,0 +1,21 @@
+# Compiled Object files, Static and Dynamic libs (Shared Objects)
+*.o
+*.a
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+*.test
+*.prof
+*.out
+
+vendor/
+go.work
+
+target
+makefile
+
+.DS_Store
+

@@ -29,27 +29,27 @@ import (
 )
 
 func main() {
-	tree, err := scapegoat.New[int](scapegoat.DefaultAlpha)
+    tree, err := scapegoat.New[int](scapegoat.DefaultAlpha)
     // handle err
     keys := []int{42, 99, 3}
     for _, key := range keys {
     	err := sg.Insert(key)
         // handle err
-	}
+    }
     found := tree.Search(42)
     fmt.Println("found 42?", found) // true
-    deleted := tree.Delete(88)
-    fmt.Println("deleted 88?", deleted) // false
-	// stats
+    removed := tree.Remove(88)
+    fmt.Println("removed 88?", removed) // false
+    // stats
     fmt.Println(tree.Stats.TotalInserts)  // 3
-	fmt.Println(tree.Stats.TotalRemovals) // 0
-	fmt.Println(tree.Stats.TotalSearches) // 1
+    fmt.Println(tree.Stats.TotalRemovals) // 0
+    fmt.Println(tree.Stats.TotalSearches) // 1
 }
 ```
 
 ## Documentation
 
-- [https://pkg.go.dev/github.com/umahmood/scapegoat]()
+- [https://pkg.go.dev/github.com/umahmood/scapegoat](https://pkg.go.dev/github.com/umahmood/scapegoat)
 
 ## References
 
